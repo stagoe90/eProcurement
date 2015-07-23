@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProcurementDBModelStoreContainer" CdmEntityContainer="ProcurementDBEntities">
+    <EntitySetMapping Name="Charges">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Charge">
+        <MappingFragment StoreEntitySet="Charges">
+          <ScalarProperty Name="Charge_ID" ColumnName="Charge_ID" />
+          <ScalarProperty Name="Charge1" ColumnName="Charge" />
+          <ScalarProperty Name="Charge_Name" ColumnName="Charge_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClearingAgentContracts">
+      <EntityTypeMapping TypeName="ProcurementDBModel.ClearingAgentContract">
+        <MappingFragment StoreEntitySet="ClearingAgentContracts">
+          <ScalarProperty Name="ClearingAgentContractID" ColumnName="ClearingAgentContractID" />
+          <ScalarProperty Name="ClearingAgentContractDate" ColumnName="ClearingAgentContractDate" />
+          <ScalarProperty Name="ClearingAgentContractRefNo" ColumnName="ClearingAgentContractRefNo" />
+          <ScalarProperty Name="ClearingAgentDetailsID" ColumnName="ClearingAgentDetailsID" />
+          <ScalarProperty Name="ClearingAgentContractClass" ColumnName="ClearingAgentContractClass" />
+          <ScalarProperty Name="ClearingAgentContractBales" ColumnName="ClearingAgentContractBales" />
+          <ScalarProperty Name="ClearingAgentContractQtyApproved" ColumnName="ClearingAgentContractQtyApproved" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="ClearingAgentContractBOL" ColumnName="ClearingAgentContractBOL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClearingAgentDetails">
+      <EntityTypeMapping TypeName="ProcurementDBModel.ClearingAgentDetail">
+        <MappingFragment StoreEntitySet="ClearingAgentDetails">
+          <ScalarProperty Name="ClearingAgentDetailsID" ColumnName="ClearingAgentDetailsID" />
+          <ScalarProperty Name="ClearingAgentDetailsName" ColumnName="ClearingAgentDetailsName" />
+          <ScalarProperty Name="ClearingAgentDetailsPhone" ColumnName="ClearingAgentDetailsPhone" />
+          <ScalarProperty Name="ClearingAgentDetailsAddress" ColumnName="ClearingAgentDetailsAddress" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClearingAgents">
+      <EntityTypeMapping TypeName="ProcurementDBModel.ClearingAgent">
+        <MappingFragment StoreEntitySet="ClearingAgents">
+          <ScalarProperty Name="ClearingAgentID" ColumnName="ClearingAgentID" />
+          <ScalarProperty Name="ClearingAgentName" ColumnName="ClearingAgentName" />
+          <ScalarProperty Name="ClearingAgentCepsDuty" ColumnName="ClearingAgentCepsDuty" />
+          <ScalarProperty Name="ClearingAgentMolShipping" ColumnName="ClearingAgentMolShipping" />
+          <ScalarProperty Name="ClearingAgentMpsCharges" ColumnName="ClearingAgentMpsCharges" />
+          <ScalarProperty Name="ClearingAgentGphaCharges" ColumnName="ClearingAgentGphaCharges" />
+          <ScalarProperty Name="ClearingAgentForkLift" ColumnName="ClearingAgentForkLift" />
+          <ScalarProperty Name="ClearingAgentTransportation" ColumnName="ClearingAgentTransportation" />
+          <ScalarProperty Name="ClearingAgentInterestCharges" ColumnName="ClearingAgentInterestCharges" />
+          <ScalarProperty Name="ClearingAgentLabour" ColumnName="ClearingAgentLabour" />
+          <ScalarProperty Name="ClearingAgentAgencyFee" ColumnName="ClearingAgentAgencyFee" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="ClearingAgentAgencyDate" ColumnName="ClearingAgentAgencyDate" />
+          <ScalarProperty Name="ClearingAgentAgencyRefNo" ColumnName="ClearingAgentAgencyRefNo" />
+          <ScalarProperty Name="ClearingAgentDetailsID" ColumnName="ClearingAgentDetailsID" />
+          <ScalarProperty Name="ClearingAgentInvoice" ColumnName="ClearingAgentInvoice" />
+          <ScalarProperty Name="ClearingAgentVAT" ColumnName="ClearingAgentVAT" />
+          <ScalarProperty Name="ClearingAgentEPA" ColumnName="ClearingAgentEPA" />
+          <ScalarProperty Name="ClearingAgentDescription" ColumnName="ClearingAgentDescription" />
+          <ScalarProperty Name="ClearingAgentShippingLine" ColumnName="ClearingAgentShippingLine" />
+          <ScalarProperty Name="ClearingAgentContainerAgent" ColumnName="ClearingAgentContainerAgent" />
+          <ScalarProperty Name="ClearingAgentDumurrage" ColumnName="ClearingAgentDumurrage" />
+          <ScalarProperty Name="IFTNo" ColumnName="IFTNo" />
+          <ScalarProperty Name="BOLNo" ColumnName="BOLNo" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="ClearingAgentContractID" ColumnName="ClearingAgentContractID" />
+          <ScalarProperty Name="ClearingAgentQuantityCleared" ColumnName="ClearingAgentQuantityCleared" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contracts">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Contract">
+        <MappingFragment StoreEntitySet="Contracts">
+          <ScalarProperty Name="ContractID" ColumnName="ContractID" />
+          <ScalarProperty Name="Contract_IFTNo" ColumnName="Contract_IFTNo" />
+          <ScalarProperty Name="ContractNotification" ColumnName="ContractNotification" />
+          <ScalarProperty Name="ContractPerformanceBond" ColumnName="ContractPerformanceBond" />
+          <ScalarProperty Name="ContractDateSigned" ColumnName="ContractDateSigned" />
+          <ScalarProperty Name="ContractCreditDateEstablished" ColumnName="ContractCreditDateEstablished" />
+          <ScalarProperty Name="ContractAdvancePaymentGuarantee" ColumnName="ContractAdvancePaymentGuarantee" />
+          <ScalarProperty Name="ContractExpectedDeliveryDate" ColumnName="ContractExpectedDeliveryDate" />
+          <ScalarProperty Name="ContractActualDeliveryDate" ColumnName="ContractActualDeliveryDate" />
+          <ScalarProperty Name="ContractStatus" ColumnName="ContractStatus" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="Contract_Let_Credit" ColumnName="Contract.Let_Credit" />
+          <ScalarProperty Name="Contract_Credit" ColumnName="Contract_Credit" />
+          <ScalarProperty Name="ContractCompany" ColumnName="ContractCompany" />
+          <ScalarProperty Name="ContractItem" ColumnName="ContractItem" />
+          <ScalarProperty Name="ContractQuantity" ColumnName="ContractQuantity" />
+          <ScalarProperty Name="ContractValue" ColumnName="ContractValue" />
+          <ScalarProperty Name="ContractRemarks" ColumnName="ContractRemarks" />
+          <ScalarProperty Name="ContractNotificationRemarks" ColumnName="ContractNotificationRemarks" />
+          <ScalarProperty Name="ContractPerformanceBondRemarks" ColumnName="ContractPerformanceBondRemarks" />
+          <ScalarProperty Name="ContractDateSignedRemarks" ColumnName="ContractDateSignedRemarks" />
+          <ScalarProperty Name="ContractCreditDateEstablishedRemarks" ColumnName="ContractCreditDateEstablishedRemarks" />
+          <ScalarProperty Name="ContractExpectedDeliveryDateRemarks" ColumnName="ContractExpectedDeliveryDateRemarks" />
+          <ScalarProperty Name="ContractActualDeliveryDateRemarks" ColumnName="ContractActualDeliveryDateRemarks" />
+          <ScalarProperty Name="Contract_CreditRemarks" ColumnName="Contract_CreditRemarks" />
+          <ScalarProperty Name="ContractDeliverySite" ColumnName="ContractDeliverySite" />
+          <ScalarProperty Name="ContractDeliverySiteRemarks" ColumnName="ContractDeliverySiteRemarks" />
+          <ScalarProperty Name="ContractAdvancePaymentGuaranteeTalk" ColumnName="ContractAdvancePaymentGuaranteeTalk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractStatus">
+      <EntityTypeMapping TypeName="ProcurementDBModel.ContractStatu">
+        <MappingFragment StoreEntitySet="ContractStatus">
+          <ScalarProperty Name="ContractStatusID" ColumnName="ContractStatusID" />
+          <ScalarProperty Name="ContractStatusName" ColumnName="ContractStatusName" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currencies">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Currency">
+        <MappingFragment StoreEntitySet="Currencies">
+          <ScalarProperty Name="Currency_ID" ColumnName="Currency_ID" />
+          <ScalarProperty Name="Currency1" ColumnName="Currency" />
+          <ScalarProperty Name="Currency_Symbol" ColumnName="Currency_Symbol" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Delivery_Periods">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Delivery_Periods">
+        <MappingFragment StoreEntitySet="Delivery_Periods">
+          <ScalarProperty Name="Delivery_Period_ID" ColumnName="Delivery_Period_ID" />
+          <ScalarProperty Name="Delivery_Period_Name" ColumnName="Delivery_Period_Name" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Delivery_Sites">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Delivery_Sites">
+        <MappingFragment StoreEntitySet="Delivery_Sites">
+          <ScalarProperty Name="Delivery_Site_ID" ColumnName="Delivery_Site_ID" />
+          <ScalarProperty Name="Delivery_Site_Name" ColumnName="Delivery_Site_Name" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Department">
+        <MappingFragment StoreEntitySet="Departments">
+          <ScalarProperty Name="Department_ID" ColumnName="Department_ID" />
+          <ScalarProperty Name="Department1" ColumnName="Department" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Group">
+        <MappingFragment StoreEntitySet="Groups">
+          <ScalarProperty Name="Group_ID" ColumnName="Group_ID" />
+          <ScalarProperty Name="Group_Name" ColumnName="Group_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LPOes">
+      <EntityTypeMapping TypeName="ProcurementDBModel.LPO">
+        <MappingFragment StoreEntitySet="LPO">
+          <ScalarProperty Name="LPO_ID" ColumnName="LPO_ID" />
+          <ScalarProperty Name="LPO_No" ColumnName="LPO_No" />
+          <ScalarProperty Name="Quotatio_ID" ColumnName="Quotatio_ID" />
+          <ScalarProperty Name="Supplier_ID" ColumnName="Supplier_ID" />
+          <ScalarProperty Name="Staff_ID" ColumnName="Staff_ID" />
+          <ScalarProperty Name="LPO_Date" ColumnName="LPO_Date" />
+          <ScalarProperty Name="LPO_Delivery_Date" ColumnName="LPO_Delivery_Date" />
+          <ScalarProperty Name="Currency_ID" ColumnName="Currency_ID" />
+          <ScalarProperty Name="LPO_VAT" ColumnName="LPO_VAT" />
+          <ScalarProperty Name="LPO_NHIL" ColumnName="LPO_NHIL" />
+          <ScalarProperty Name="LPO_Status_ID" ColumnName="LPO_Status_ID" />
+          <ScalarProperty Name="LPO_Tax" ColumnName="LPO_Tax" />
+          <ScalarProperty Name="LPO_Date_Received" ColumnName="LPO_Date_Received" />
+          <ScalarProperty Name="LPO_Delivery_Site" ColumnName="LPO_Delivery_Site" />
+          <ScalarProperty Name="LPO_Warranty" ColumnName="LPO_Warranty" />
+          <ScalarProperty Name="Delivery_Site_ID" ColumnName="Delivery_Site_ID" />
+          <ScalarProperty Name="Delivery_Period_ID" ColumnName="Delivery_Period_ID" />
+          <ScalarProperty Name="Warranty_ID" ColumnName="Warranty_ID" />
+          <ScalarProperty Name="Payment_Term_ID" ColumnName="Payment_Term_ID" />
+          <ScalarProperty Name="LPO_Invoice_Num_Note" ColumnName="LPO_Invoice_Num_Note" />
+          <ScalarProperty Name="LPO_Goods_Rec_Note_No" ColumnName="LPO_Goods_Rec_Note_No" />
+          <ScalarProperty Name="LPO_Contract_Letter_No" ColumnName="LPO_Contract_Letter_No" />
+          <ScalarProperty Name="LPO_Amount" ColumnName="LPO_Amount" />
+          <ScalarProperty Name="LPO_Invoice_Num_Note_Date" ColumnName="LPO_Invoice_Num_Note_Date" />
+          <ScalarProperty Name="LPO_Goods_Rec_Note_No_Date" ColumnName="LPO_Goods_Rec_Note_No_Date" />
+          <ScalarProperty Name="LPO_ForDept" ColumnName="LPO_ForDept" />
+          <ScalarProperty Name="LPOItem" ColumnName="LPOItem" />
+          <ScalarProperty Name="LPOcc" ColumnName="LPOcc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LPO_Products">
+      <EntityTypeMapping TypeName="ProcurementDBModel.LPO_Products">
+        <MappingFragment StoreEntitySet="LPO_Products">
+          <ScalarProperty Name="LPO_Product_ID" ColumnName="LPO_Product_ID" />
+          <ScalarProperty Name="LPO_Product" ColumnName="LPO_Product" />
+          <ScalarProperty Name="LPO_Product_Description" ColumnName="LPO_Product_Description" />
+          <ScalarProperty Name="LPO_Product_Quantity" ColumnName="LPO_Product_Quantity" />
+          <ScalarProperty Name="Unit_Of_Measure_ID" ColumnName="Unit_Of_Measure_ID" />
+          <ScalarProperty Name="LPO_Product_UnitPrice" ColumnName="LPO_Product_UnitPrice" />
+          <ScalarProperty Name="LPO_Product_Total" ColumnName="LPO_Product_Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LPO_Status">
+      <EntityTypeMapping TypeName="ProcurementDBModel.LPO_Status">
+        <MappingFragment StoreEntitySet="LPO_Status">
+          <ScalarProperty Name="LPO_Status_ID" ColumnName="LPO_Status_ID" />
+          <ScalarProperty Name="LPO_Status1" ColumnName="LPO_Status" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payment_Terms">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Payment_Terms">
+        <MappingFragment StoreEntitySet="Payment_Terms">
+          <ScalarProperty Name="Payment_Term_ID" ColumnName="Payment_Term_ID" />
+          <ScalarProperty Name="Payment_Term_Name" ColumnName="Payment_Term_Name" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PreContracts">
+      <EntityTypeMapping TypeName="ProcurementDBModel.PreContract">
+        <MappingFragment StoreEntitySet="PreContracts">
+          <ScalarProperty Name="PContractID" ColumnName="PContractID" />
+          <ScalarProperty Name="PContractName" ColumnName="PContractName" />
+          <ScalarProperty Name="PContractIFT" ColumnName="PContractIFT" />
+          <ScalarProperty Name="PContractProcMethod" ColumnName="PContractProcMethod" />
+          <ScalarProperty Name="PContractPrepDate" ColumnName="PContractPrepDate" />
+          <ScalarProperty Name="PContractTenderInvitationDate" ColumnName="PContractTenderInvitationDate" />
+          <ScalarProperty Name="PContractTenderClosingDate" ColumnName="PContractTenderClosingDate" />
+          <ScalarProperty Name="PContractSubEvalReport" ColumnName="PContractSubEvalReport" />
+          <ScalarProperty Name="PContractAppFinAuth" ColumnName="PContractAppFinAuth" />
+          <ScalarProperty Name="PContractAmount" ColumnName="PContractAmount" />
+          <ScalarProperty Name="PContractAward" ColumnName="PContractAward" />
+          <ScalarProperty Name="PContractSign" ColumnName="PContractSign" />
+          <ScalarProperty Name="PContractArrival" ColumnName="PContractArrival" />
+          <ScalarProperty Name="PContractInspection" ColumnName="PContractInspection" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Quotation_Products">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Quotation_Products">
+        <MappingFragment StoreEntitySet="Quotation_Products">
+          <ScalarProperty Name="Quotation_product_ID" ColumnName="Quotation_product_ID" />
+          <ScalarProperty Name="Quotation_Product" ColumnName="Quotation_Product" />
+          <ScalarProperty Name="Quotation_ID" ColumnName="Quotation_ID" />
+          <ScalarProperty Name="Quotation_Product_Description" ColumnName="Quotation_Product_Description" />
+          <ScalarProperty Name="Quotation_Product_Quantity" ColumnName="Quotation_Product_Quantity" />
+          <ScalarProperty Name="Unit_Of_Measure_ID" ColumnName="Unit_Of_Measure_ID" />
+          <ScalarProperty Name="Quotation_Product_UnitPrice" ColumnName="Quotation_Product_UnitPrice" />
+          <ScalarProperty Name="Quotation_Product_Total" ColumnName="Quotation_Product_Total" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Quotations">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Quotation">
+        <MappingFragment StoreEntitySet="Quotations">
+          <ScalarProperty Name="Quotation_ID" ColumnName="Quotation_ID" />
+          <ScalarProperty Name="Supplier_ID" ColumnName="Supplier_ID" />
+          <ScalarProperty Name="Tender_ID" ColumnName="Tender_ID" />
+          <ScalarProperty Name="Staff_ID" ColumnName="Staff_ID" />
+          <ScalarProperty Name="Quotation_Date" ColumnName="Quotation_Date" />
+          <ScalarProperty Name="Quotation_VAT" ColumnName="Quotation_VAT" />
+          <ScalarProperty Name="Quotation_NHIL" ColumnName="Quotation_NHIL" />
+          <ScalarProperty Name="Quotation_Remarks" ColumnName="Quotation_Remarks" />
+          <ScalarProperty Name="Quotation_Total" ColumnName="Quotation_Total" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="LPO" ColumnName="LPO" />
+          <ScalarProperty Name="Quotation_Tax" ColumnName="Quotation_Tax" />
+          <ScalarProperty Name="Quotation_Tax_Comments" ColumnName="Quotation_Tax_Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Staffs">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Staff">
+        <MappingFragment StoreEntitySet="Staff">
+          <ScalarProperty Name="Staff_ID" ColumnName="Staff_ID" />
+          <ScalarProperty Name="Staff_Name" ColumnName="Staff_Name" />
+          <ScalarProperty Name="Staff_UserName" ColumnName="Staff_UserName" />
+          <ScalarProperty Name="Staff_Password" ColumnName="Staff_Password" />
+          <ScalarProperty Name="Group_ID" ColumnName="Group_ID" />
+          <ScalarProperty Name="Staff_Rank" ColumnName="Staff_Rank" />
+          <ScalarProperty Name="Staff_Audit" ColumnName="Staff_Audit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supplier_Categories">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Supplier_Categories">
+        <MappingFragment StoreEntitySet="Supplier_Categories">
+          <ScalarProperty Name="Supplier_Category_ID" ColumnName="Supplier_Category_ID" />
+          <ScalarProperty Name="Supplier_Category" ColumnName="Supplier_Category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Supplier">
+        <MappingFragment StoreEntitySet="Suppliers">
+          <ScalarProperty Name="Supplier_ID" ColumnName="Supplier_ID" />
+          <ScalarProperty Name="Supplier_Name" ColumnName="Supplier_Name" />
+          <ScalarProperty Name="Supplier_Address" ColumnName="Supplier_Address" />
+          <ScalarProperty Name="Supplier_City" ColumnName="Supplier_City" />
+          <ScalarProperty Name="Supplier_Region" ColumnName="Supplier_Region" />
+          <ScalarProperty Name="Supplier_Country" ColumnName="Supplier_Country" />
+          <ScalarProperty Name="Supplier_Location" ColumnName="Supplier_Location" />
+          <ScalarProperty Name="Supplier_Registration_Date" ColumnName="Supplier_Registration_Date" />
+          <ScalarProperty Name="Supplier_Fax" ColumnName="Supplier_Fax" />
+          <ScalarProperty Name="Supplier_Telephone" ColumnName="Supplier_Telephone" />
+          <ScalarProperty Name="Supplier_Email" ColumnName="Supplier_Email" />
+          <ScalarProperty Name="Supplier_Contact_Person" ColumnName="Supplier_Contact_Person" />
+          <ScalarProperty Name="Supplier_Website" ColumnName="Supplier_Website" />
+          <ScalarProperty Name="Staff_ID" ColumnName="Staff_ID" />
+          <ScalarProperty Name="Supplier_Category_ID" ColumnName="Supplier_Category_ID" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="Supplier_SSNIT" ColumnName="Supplier_SSNIT" />
+          <ScalarProperty Name="Supplier_IRS" ColumnName="Supplier_IRS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ProcurementDBModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Taxes">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Tax">
+        <MappingFragment StoreEntitySet="Taxes">
+          <ScalarProperty Name="Tax_ID" ColumnName="Tax_ID" />
+          <ScalarProperty Name="Tax_Name" ColumnName="Tax_Name" />
+          <ScalarProperty Name="Tax_Amount" ColumnName="Tax_Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Temas">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Tema">
+        <MappingFragment StoreEntitySet="Tema">
+          <ScalarProperty Name="TemaID" ColumnName="TemaID" />
+          <ScalarProperty Name="TemaItemDescription" ColumnName="TemaItemDescription" />
+          <ScalarProperty Name="TemaBODNumberHouseCopy" ColumnName="TemaBODNumberHouseCopy" />
+          <ScalarProperty Name="TemaNameofShippingLine" ColumnName="TemaNameofShippingLine" />
+          <ScalarProperty Name="TemaMasterBOD" ColumnName="TemaMasterBOD" />
+          <ScalarProperty Name="TemaArrivalDate" ColumnName="TemaArrivalDate" />
+          <ScalarProperty Name="TemaQuantity" ColumnName="TemaQuantity" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="UnitOfMeasureID" ColumnName="UnitOfMeasureID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tender_Products">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Tender_Products">
+        <MappingFragment StoreEntitySet="Tender_Products">
+          <ScalarProperty Name="Tender_Product_ID" ColumnName="Tender_Product_ID" />
+          <ScalarProperty Name="Tender_ID" ColumnName="Tender_ID" />
+          <ScalarProperty Name="Tender_Product" ColumnName="Tender_Product" />
+          <ScalarProperty Name="Tender_Product_Description" ColumnName="Tender_Product_Description" />
+          <ScalarProperty Name="Tender_Product_Quantity" ColumnName="Tender_Product_Quantity" />
+          <ScalarProperty Name="Unit_Of_Measure_ID" ColumnName="Unit_Of_Measure_ID" />
+          <ScalarProperty Name="Tender_UnitPrice" ColumnName="Tender_UnitPrice" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tender_Status">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Tender_Status">
+        <MappingFragment StoreEntitySet="Tender_Status">
+          <ScalarProperty Name="Tender_Status_ID" ColumnName="Tender_Status_ID" />
+          <ScalarProperty Name="Tender_Status_Name" ColumnName="Tender_Status_Name" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tenders">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Tender">
+        <MappingFragment StoreEntitySet="Tenders">
+          <ScalarProperty Name="Tender_ID" ColumnName="Tender_ID" />
+          <ScalarProperty Name="Tender_No" ColumnName="Tender_No" />
+          <ScalarProperty Name="Tender_Title" ColumnName="Tender_Title" />
+          <ScalarProperty Name="Tender_Start_Date" ColumnName="Tender_Start_Date" />
+          <ScalarProperty Name="Tender_Closing_Date" ColumnName="Tender_Closing_Date" />
+          <ScalarProperty Name="Tender_Description" ColumnName="Tender_Description" />
+          <ScalarProperty Name="Currency_ID" ColumnName="Currency_ID" />
+          <ScalarProperty Name="Tender_Remarks" ColumnName="Tender_Remarks" />
+          <ScalarProperty Name="Department_ID" ColumnName="Department_ID" />
+          <ScalarProperty Name="Tender_Expected_Delivery_Date" ColumnName="Tender_Expected_Delivery_Date" />
+          <ScalarProperty Name="Staff_ID" ColumnName="Staff_ID" />
+          <ScalarProperty Name="Tender_Entry_Date" ColumnName="Tender_Entry_Date" />
+          <ScalarProperty Name="Tender_Approved_By" ColumnName="Tender_Approved_By" />
+          <ScalarProperty Name="Tender_Approval_Date" ColumnName="Tender_Approval_Date" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="Tender_Status" ColumnName="Tender_Status" />
+          <ScalarProperty Name="Tender_Status_ID" ColumnName="Tender_Status_ID" />
+          <ScalarProperty Name="Tender_Memo_No" ColumnName="Tender_Memo_No" />
+          <ScalarProperty Name="Tender_User" ColumnName="Tender_User" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Unit_Of_Measure">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Unit_Of_Measure">
+        <MappingFragment StoreEntitySet="Unit_Of_Measure">
+          <ScalarProperty Name="Unit_Of_Measure_ID" ColumnName="Unit_Of_Measure_ID" />
+          <ScalarProperty Name="Unit_Of_Measure1" ColumnName="Unit_Of_Measure" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VPNContracts">
+      <EntityTypeMapping TypeName="ProcurementDBModel.VPNContract">
+        <MappingFragment StoreEntitySet="VPNContracts">
+          <ScalarProperty Name="ContractID" ColumnName="ContractID" />
+          <ScalarProperty Name="Contract_IFTNo" ColumnName="Contract_IFTNo" />
+          <ScalarProperty Name="ContractNotification" ColumnName="ContractNotification" />
+          <ScalarProperty Name="ContractPerformanceBond" ColumnName="ContractPerformanceBond" />
+          <ScalarProperty Name="ContractDateSigned" ColumnName="ContractDateSigned" />
+          <ScalarProperty Name="ContractCreditDateEstablished" ColumnName="ContractCreditDateEstablished" />
+          <ScalarProperty Name="ContractAdvancePaymentGuarantee" ColumnName="ContractAdvancePaymentGuarantee" />
+          <ScalarProperty Name="ContractExpectedDeliveryDate" ColumnName="ContractExpectedDeliveryDate" />
+          <ScalarProperty Name="ContractActualDeliveryDate" ColumnName="ContractActualDeliveryDate" />
+          <ScalarProperty Name="ContractStatus" ColumnName="ContractStatus" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="Contract_Let_Credit" ColumnName="Contract.Let_Credit" />
+          <ScalarProperty Name="Contract_Credit" ColumnName="Contract_Credit" />
+          <ScalarProperty Name="ContractCompany" ColumnName="ContractCompany" />
+          <ScalarProperty Name="ContractItem" ColumnName="ContractItem" />
+          <ScalarProperty Name="ContractQuantity" ColumnName="ContractQuantity" />
+          <ScalarProperty Name="ContractValue" ColumnName="ContractValue" />
+          <ScalarProperty Name="ContractRemarks" ColumnName="ContractRemarks" />
+          <ScalarProperty Name="ContractNotificationRemarks" ColumnName="ContractNotificationRemarks" />
+          <ScalarProperty Name="ContractPerformanceBondRemarks" ColumnName="ContractPerformanceBondRemarks" />
+          <ScalarProperty Name="ContractDateSignedRemarks" ColumnName="ContractDateSignedRemarks" />
+          <ScalarProperty Name="ContractCreditDateEstablishedRemarks" ColumnName="ContractCreditDateEstablishedRemarks" />
+          <ScalarProperty Name="ContractExpectedDeliveryDateRemarks" ColumnName="ContractExpectedDeliveryDateRemarks" />
+          <ScalarProperty Name="ContractActualDeliveryDateRemarks" ColumnName="ContractActualDeliveryDateRemarks" />
+          <ScalarProperty Name="Contract_CreditRemarks" ColumnName="Contract_CreditRemarks" />
+          <ScalarProperty Name="ContractDeliverySite" ColumnName="ContractDeliverySite" />
+          <ScalarProperty Name="ContractDeliverySiteRemarks" ColumnName="ContractDeliverySiteRemarks" />
+          <ScalarProperty Name="ContractAdvancePaymentGuaranteeTalk" ColumnName="ContractAdvancePaymentGuaranteeTalk" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="UnitOfMeasureID" ColumnName="UnitOfMeasureID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Warranties">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Warranty">
+        <MappingFragment StoreEntitySet="Warranties">
+          <ScalarProperty Name="Warranty_ID" ColumnName="Warranty_ID" />
+          <ScalarProperty Name="Warranty_Name" ColumnName="Warranty_Name" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Waybills">
+      <EntityTypeMapping TypeName="ProcurementDBModel.Waybill">
+        <MappingFragment StoreEntitySet="Waybills">
+          <ScalarProperty Name="WaybillID" ColumnName="WaybillID" />
+          <ScalarProperty Name="WaybillDate" ColumnName="WaybillDate" />
+          <ScalarProperty Name="WaybillReceipient" ColumnName="WaybillReceipient" />
+          <ScalarProperty Name="WaybillNo" ColumnName="WaybillNo" />
+          <ScalarProperty Name="ZoneID" ColumnName="ZoneID" />
+          <ScalarProperty Name="DestinationID" ColumnName="DestinationID" />
+          <ScalarProperty Name="WaybillVehicleNo" ColumnName="WaybillVehicleNo" />
+          <ScalarProperty Name="WaybillServiceProviderID" ColumnName="WaybillServiceProviderID" />
+          <ScalarProperty Name="WaybillRefNo" ColumnName="WaybillRefNo" />
+          <ScalarProperty Name="WaybillQty" ColumnName="WaybillQty" />
+          <ScalarProperty Name="TransactionTypeID" ColumnName="TransactionTypeID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="WaybillBOL" ColumnName="WaybillBOL" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="IFTNo" ColumnName="IFTNo" />
+          <ScalarProperty Name="UnitOfMeasureID" ColumnName="UnitOfMeasureID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

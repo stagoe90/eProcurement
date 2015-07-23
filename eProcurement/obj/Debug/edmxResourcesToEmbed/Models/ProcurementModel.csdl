@@ -1,0 +1,739 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProcurementDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Charge">
+    <Key>
+      <PropertyRef Name="Charge_ID" />
+    </Key>
+    <Property Name="Charge_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Charge1" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Charge_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="LPOes" Relationship="Self.FK_LPO_Charges1" FromRole="Charges" ToRole="LPO" />
+    <NavigationProperty Name="Quotations" Relationship="Self.FK_Quotations_Charges" FromRole="Charges" ToRole="Quotations" />
+    <NavigationProperty Name="Quotations1" Relationship="Self.FK_Quotations_Charges1" FromRole="Charges" ToRole="Quotations" />
+  </EntityType>
+  <EntityType Name="ClearingAgentContract">
+    <Key>
+      <PropertyRef Name="ClearingAgentContractID" />
+    </Key>
+    <Property Name="ClearingAgentContractID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClearingAgentContractDate" Type="DateTime" Precision="0" />
+    <Property Name="ClearingAgentContractRefNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ClearingAgentDetailsID" Type="Int32" />
+    <Property Name="ClearingAgentContractClass" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ClearingAgentContractBales" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ClearingAgentContractQtyApproved" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ClearingAgentContractBOL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ClearingAgentDetail">
+    <Key>
+      <PropertyRef Name="ClearingAgentDetailsID" />
+    </Key>
+    <Property Name="ClearingAgentDetailsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClearingAgentDetailsName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ClearingAgentDetailsPhone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ClearingAgentDetailsAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="ClearingAgent">
+    <Key>
+      <PropertyRef Name="ClearingAgentID" />
+    </Key>
+    <Property Name="ClearingAgentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClearingAgentName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ClearingAgentCepsDuty" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ClearingAgentMolShipping" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ClearingAgentMpsCharges" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ClearingAgentGphaCharges" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ClearingAgentForkLift" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ClearingAgentTransportation" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ClearingAgentInterestCharges" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ClearingAgentLabour" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ClearingAgentAgencyFee" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ClearingAgentAgencyDate" Type="DateTime" Precision="0" />
+    <Property Name="ClearingAgentAgencyRefNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ClearingAgentDetailsID" Type="Int32" />
+    <Property Name="ClearingAgentInvoice" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ClearingAgentVAT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ClearingAgentEPA" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ClearingAgentDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ClearingAgentShippingLine" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ClearingAgentContainerAgent" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ClearingAgentDumurrage" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="IFTNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BOLNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SubTotal" Type="Decimal" Precision="23" Scale="2" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ClearingAgentContractID" Type="Int32" />
+    <Property Name="ClearingAgentQuantityCleared" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="Contract">
+    <Key>
+      <PropertyRef Name="ContractID" />
+    </Key>
+    <Property Name="ContractID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Contract_IFTNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContractNotification" Type="DateTime" Precision="0" />
+    <Property Name="ContractPerformanceBond" Type="DateTime" Precision="0" />
+    <Property Name="ContractDateSigned" Type="DateTime" Precision="0" />
+    <Property Name="ContractCreditDateEstablished" Type="DateTime" Precision="0" />
+    <Property Name="ContractAdvancePaymentGuarantee" Type="DateTime" Precision="0" />
+    <Property Name="ContractExpectedDeliveryDate" Type="DateTime" Precision="0" />
+    <Property Name="ContractActualDeliveryDate" Type="DateTime" Precision="0" />
+    <Property Name="ContractStatus" Type="Int32" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Contract_Let_Credit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Contract_Credit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContractCompany" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractItem" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractQuantity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContractValue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContractRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractNotificationRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractPerformanceBondRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractDateSignedRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractCreditDateEstablishedRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractExpectedDeliveryDateRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractActualDeliveryDateRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Contract_CreditRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractDeliverySite" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContractDeliverySiteRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractAdvancePaymentGuaranteeTalk" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ContractStatu">
+    <Key>
+      <PropertyRef Name="ContractStatusID" />
+    </Key>
+    <Property Name="ContractStatusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractStatusName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="Currency_ID" />
+    </Key>
+    <Property Name="Currency_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Currency1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Currency_Symbol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Tenders" Relationship="Self.FK_Tenders_Currencies" FromRole="Currencies" ToRole="Tenders" />
+  </EntityType>
+  <EntityType Name="Delivery_Periods">
+    <Key>
+      <PropertyRef Name="Delivery_Period_ID" />
+    </Key>
+    <Property Name="Delivery_Period_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Delivery_Period_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Delivery_Sites">
+    <Key>
+      <PropertyRef Name="Delivery_Site_ID" />
+    </Key>
+    <Property Name="Delivery_Site_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Delivery_Site_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="Department_ID" />
+    </Key>
+    <Property Name="Department_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Department1" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Tenders" Relationship="Self.FK_Tenders_Departments" FromRole="Departments" ToRole="Tenders" />
+  </EntityType>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="Group_ID" />
+    </Key>
+    <Property Name="Group_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Group_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Staffs" Relationship="Self.FK_Staff_Groups" FromRole="Groups" ToRole="Staff" />
+  </EntityType>
+  <EntityType Name="LPO">
+    <Key>
+      <PropertyRef Name="LPO_ID" />
+    </Key>
+    <Property Name="LPO_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LPO_No" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Quotatio_ID" Type="Int32" />
+    <Property Name="Supplier_ID" Type="Int32" />
+    <Property Name="Staff_ID" Type="Int32" />
+    <Property Name="LPO_Date" Type="DateTime" Precision="0" />
+    <Property Name="LPO_Delivery_Date" Type="DateTime" Precision="0" />
+    <Property Name="Currency_ID" Type="Int32" />
+    <Property Name="LPO_VAT" Type="Int32" />
+    <Property Name="LPO_NHIL" Type="Int32" />
+    <Property Name="LPO_Status_ID" Type="Int32" />
+    <Property Name="LPO_Tax" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="LPO_Date_Received" Type="DateTime" Precision="0" />
+    <Property Name="LPO_Delivery_Site" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LPO_Warranty" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Site_ID" Type="Int32" />
+    <Property Name="Delivery_Period_ID" Type="Int32" />
+    <Property Name="Warranty_ID" Type="Int32" />
+    <Property Name="Payment_Term_ID" Type="Int32" />
+    <Property Name="LPO_Invoice_Num_Note" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LPO_Goods_Rec_Note_No" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LPO_Contract_Letter_No" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LPO_Amount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="LPO_Invoice_Num_Note_Date" Type="DateTime" Precision="0" />
+    <Property Name="LPO_Goods_Rec_Note_No_Date" Type="DateTime" Precision="0" />
+    <Property Name="LPO_ForDept" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LPOItem" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LPOcc" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Charge" Relationship="Self.FK_LPO_Charges1" FromRole="LPO" ToRole="Charges" />
+    <NavigationProperty Name="LPO_Status" Relationship="Self.FK_LPO_LPO_Status" FromRole="LPO" ToRole="LPO_Status" />
+    <NavigationProperty Name="Quotation" Relationship="Self.FK_LPO_Quotations" FromRole="LPO" ToRole="Quotations" />
+  </EntityType>
+  <EntityType Name="LPO_Products">
+    <Key>
+      <PropertyRef Name="LPO_Product_ID" />
+    </Key>
+    <Property Name="LPO_Product_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LPO_Product" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LPO_Product_Description" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="LPO_Product_Quantity" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Unit_Of_Measure_ID" Type="Int32" />
+    <Property Name="LPO_Product_UnitPrice" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="LPO_Product_Total" Type="Decimal" Precision="37" Scale="2" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="LPO_Status">
+    <Key>
+      <PropertyRef Name="LPO_Status_ID" />
+    </Key>
+    <Property Name="LPO_Status_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LPO_Status1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="LPOes" Relationship="Self.FK_LPO_LPO_Status" FromRole="LPO_Status" ToRole="LPO" />
+  </EntityType>
+  <EntityType Name="Payment_Terms">
+    <Key>
+      <PropertyRef Name="Payment_Term_ID" />
+    </Key>
+    <Property Name="Payment_Term_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Payment_Term_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="PreContract">
+    <Key>
+      <PropertyRef Name="PContractID" />
+    </Key>
+    <Property Name="PContractID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PContractName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PContractIFT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PContractProcMethod" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PContractPrepDate" Type="DateTime" Precision="0" />
+    <Property Name="PContractTenderInvitationDate" Type="DateTime" Precision="0" />
+    <Property Name="PContractTenderClosingDate" Type="DateTime" Precision="0" />
+    <Property Name="PContractSubEvalReport" Type="DateTime" Precision="0" />
+    <Property Name="PContractAppFinAuth" Type="DateTime" Precision="0" />
+    <Property Name="PContractAmount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PContractAward" Type="DateTime" Precision="0" />
+    <Property Name="PContractSign" Type="DateTime" Precision="0" />
+    <Property Name="PContractArrival" Type="DateTime" Precision="0" />
+    <Property Name="PContractInspection" Type="DateTime" Precision="0" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="CurrencyID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Quotation_Products">
+    <Key>
+      <PropertyRef Name="Quotation_product_ID" />
+    </Key>
+    <Property Name="Quotation_product_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Quotation_Product" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Quotation_ID" Type="Int32" />
+    <Property Name="Quotation_Product_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Quotation_Product_Quantity" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Unit_Of_Measure_ID" Type="Int32" />
+    <Property Name="Quotation_Product_UnitPrice" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Quotation_Product_Total" Type="Decimal" Precision="37" Scale="6" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Quotation" Relationship="Self.FK_Quotation_Products_Quotations" FromRole="Quotation_Products" ToRole="Quotations" />
+  </EntityType>
+  <EntityType Name="Quotation">
+    <Key>
+      <PropertyRef Name="Quotation_ID" />
+    </Key>
+    <Property Name="Quotation_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Supplier_ID" Type="Int32" />
+    <Property Name="Tender_ID" Type="Int32" />
+    <Property Name="Staff_ID" Type="Int32" />
+    <Property Name="Quotation_Date" Type="DateTime" Precision="0" />
+    <Property Name="Quotation_VAT" Type="Int32" />
+    <Property Name="Quotation_NHIL" Type="Int32" />
+    <Property Name="Quotation_Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Quotation_Total" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="LPO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Quotation_Tax" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Quotation_Tax_Comments" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Charge" Relationship="Self.FK_Quotations_Charges" FromRole="Quotations" ToRole="Charges" />
+    <NavigationProperty Name="Charge1" Relationship="Self.FK_Quotations_Charges1" FromRole="Quotations" ToRole="Charges" />
+    <NavigationProperty Name="LPOes" Relationship="Self.FK_LPO_Quotations" FromRole="Quotations" ToRole="LPO" />
+    <NavigationProperty Name="Quotation_Products" Relationship="Self.FK_Quotation_Products_Quotations" FromRole="Quotations" ToRole="Quotation_Products" />
+    <NavigationProperty Name="Supplier" Relationship="Self.FK_Quotations_Suppliers" FromRole="Quotations" ToRole="Suppliers" />
+    <NavigationProperty Name="Tender" Relationship="Self.FK_Quotations_Tenders" FromRole="Quotations" ToRole="Tenders" />
+  </EntityType>
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="Staff_ID" />
+    </Key>
+    <Property Name="Staff_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Staff_Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Staff_UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Staff_Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Group_ID" Type="Int32" />
+    <Property Name="Staff_Rank" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Staff_Audit" Type="Int32" />
+    <NavigationProperty Name="Group" Relationship="Self.FK_Staff_Groups" FromRole="Staff" ToRole="Groups" />
+    <NavigationProperty Name="Tenders" Relationship="Self.FK_Tenders_Staff" FromRole="Staff" ToRole="Tenders" />
+  </EntityType>
+  <EntityType Name="Supplier_Categories">
+    <Key>
+      <PropertyRef Name="Supplier_Category_ID" />
+    </Key>
+    <Property Name="Supplier_Category_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Supplier_Category" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Suppliers" Relationship="Self.FK_Suppliers_Supplier_Categories" FromRole="Supplier_Categories" ToRole="Suppliers" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="Supplier_ID" />
+    </Key>
+    <Property Name="Supplier_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Supplier_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Address" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Region" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Registration_Date" Type="DateTime" Precision="0" />
+    <Property Name="Supplier_Fax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Telephone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Contact_Person" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Website" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Staff_ID" Type="Int32" />
+    <Property Name="Supplier_Category_ID" Type="Int32" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Supplier_SSNIT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_IRS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Quotations" Relationship="Self.FK_Quotations_Suppliers" FromRole="Suppliers" ToRole="Quotations" />
+    <NavigationProperty Name="Supplier_Categories" Relationship="Self.FK_Suppliers_Supplier_Categories" FromRole="Suppliers" ToRole="Supplier_Categories" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Tax">
+    <Key>
+      <PropertyRef Name="Tax_ID" />
+    </Key>
+    <Property Name="Tax_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tax_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tax_Amount" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="Tema">
+    <Key>
+      <PropertyRef Name="TemaID" />
+    </Key>
+    <Property Name="TemaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TemaItemDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TemaBODNumberHouseCopy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TemaNameofShippingLine" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TemaMasterBOD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TemaArrivalDate" Type="DateTime" Precision="0" />
+    <Property Name="TemaQuantity" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="UnitOfMeasureID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Tender_Products">
+    <Key>
+      <PropertyRef Name="Tender_Product_ID" />
+    </Key>
+    <Property Name="Tender_Product_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tender_ID" Type="Int32" />
+    <Property Name="Tender_Product" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Tender_Product_Description" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Tender_Product_Quantity" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Unit_Of_Measure_ID" Type="Int32" />
+    <Property Name="Tender_UnitPrice" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Tender" Relationship="Self.FK_Tender_Products_Tenders" FromRole="Tender_Products" ToRole="Tenders" />
+  </EntityType>
+  <EntityType Name="Tender_Status">
+    <Key>
+      <PropertyRef Name="Tender_Status_ID" />
+    </Key>
+    <Property Name="Tender_Status_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tender_Status_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Tender">
+    <Key>
+      <PropertyRef Name="Tender_ID" />
+    </Key>
+    <Property Name="Tender_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tender_No" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tender_Title" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Tender_Start_Date" Type="DateTime" Precision="0" />
+    <Property Name="Tender_Closing_Date" Type="DateTime" Precision="0" />
+    <Property Name="Tender_Description" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Currency_ID" Type="Int32" />
+    <Property Name="Tender_Remarks" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Department_ID" Type="Int32" />
+    <Property Name="Tender_Expected_Delivery_Date" Type="DateTime" Precision="0" />
+    <Property Name="Staff_ID" Type="Int32" />
+    <Property Name="Tender_Entry_Date" Type="DateTime" Precision="0" />
+    <Property Name="Tender_Approved_By" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Tender_Approval_Date" Type="DateTime" Precision="0" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Tender_Status" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Tender_Status_ID" Type="Int32" />
+    <Property Name="Tender_Memo_No" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tender_User" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Currency" Relationship="Self.FK_Tenders_Currencies" FromRole="Tenders" ToRole="Currencies" />
+    <NavigationProperty Name="Department" Relationship="Self.FK_Tenders_Departments" FromRole="Tenders" ToRole="Departments" />
+    <NavigationProperty Name="Quotations" Relationship="Self.FK_Quotations_Tenders" FromRole="Tenders" ToRole="Quotations" />
+    <NavigationProperty Name="Staff" Relationship="Self.FK_Tenders_Staff" FromRole="Tenders" ToRole="Staff" />
+    <NavigationProperty Name="Tender_Products" Relationship="Self.FK_Tender_Products_Tenders" FromRole="Tenders" ToRole="Tender_Products" />
+  </EntityType>
+  <EntityType Name="Unit_Of_Measure">
+    <Key>
+      <PropertyRef Name="Unit_Of_Measure_ID" />
+    </Key>
+    <Property Name="Unit_Of_Measure_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Unit_Of_Measure1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="VPNContract">
+    <Key>
+      <PropertyRef Name="ContractID" />
+    </Key>
+    <Property Name="ContractID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Contract_IFTNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContractNotification" Type="DateTime" Precision="0" />
+    <Property Name="ContractPerformanceBond" Type="DateTime" Precision="0" />
+    <Property Name="ContractDateSigned" Type="DateTime" Precision="0" />
+    <Property Name="ContractCreditDateEstablished" Type="DateTime" Precision="0" />
+    <Property Name="ContractAdvancePaymentGuarantee" Type="DateTime" Precision="0" />
+    <Property Name="ContractExpectedDeliveryDate" Type="DateTime" Precision="0" />
+    <Property Name="ContractActualDeliveryDate" Type="DateTime" Precision="0" />
+    <Property Name="ContractStatus" Type="Int32" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Contract_Let_Credit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Contract_Credit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContractCompany" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractItem" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractQuantity" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ContractValue" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ContractRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractNotificationRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractPerformanceBondRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractDateSignedRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractCreditDateEstablishedRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractExpectedDeliveryDateRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractActualDeliveryDateRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Contract_CreditRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractDeliverySite" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContractDeliverySiteRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ContractAdvancePaymentGuaranteeTalk" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CurrencyID" Type="Int32" />
+    <Property Name="UnitOfMeasureID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Warranty">
+    <Key>
+      <PropertyRef Name="Warranty_ID" />
+    </Key>
+    <Property Name="Warranty_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Warranty_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Waybill">
+    <Key>
+      <PropertyRef Name="WaybillID" />
+    </Key>
+    <Property Name="WaybillID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WaybillDate" Type="DateTime" Precision="0" />
+    <Property Name="WaybillReceipient" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="WaybillNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ZoneID" Type="Int32" />
+    <Property Name="DestinationID" Type="Int32" />
+    <Property Name="WaybillVehicleNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="WaybillServiceProviderID" Type="Int32" />
+    <Property Name="WaybillRefNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="WaybillQty" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TransactionTypeID" Type="Int32" />
+    <Property Name="ItemID" Type="Int32" />
+    <Property Name="WaybillBOL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="IFTNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UnitOfMeasureID" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_LPO_Charges1">
+    <End Role="Charges" Type="Self.Charge" Multiplicity="0..1" />
+    <End Role="LPO" Type="Self.LPO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Charges">
+        <PropertyRef Name="Charge_ID" />
+      </Principal>
+      <Dependent Role="LPO">
+        <PropertyRef Name="LPO_NHIL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Quotations_Charges">
+    <End Role="Charges" Type="Self.Charge" Multiplicity="0..1" />
+    <End Role="Quotations" Type="Self.Quotation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Charges">
+        <PropertyRef Name="Charge_ID" />
+      </Principal>
+      <Dependent Role="Quotations">
+        <PropertyRef Name="Quotation_NHIL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Quotations_Charges1">
+    <End Role="Charges" Type="Self.Charge" Multiplicity="0..1" />
+    <End Role="Quotations" Type="Self.Quotation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Charges">
+        <PropertyRef Name="Charge_ID" />
+      </Principal>
+      <Dependent Role="Quotations">
+        <PropertyRef Name="Quotation_NHIL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tenders_Currencies">
+    <End Role="Currencies" Type="Self.Currency" Multiplicity="0..1" />
+    <End Role="Tenders" Type="Self.Tender" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currencies">
+        <PropertyRef Name="Currency_ID" />
+      </Principal>
+      <Dependent Role="Tenders">
+        <PropertyRef Name="Currency_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tenders_Departments">
+    <End Role="Departments" Type="Self.Department" Multiplicity="0..1" />
+    <End Role="Tenders" Type="Self.Tender" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="Department_ID" />
+      </Principal>
+      <Dependent Role="Tenders">
+        <PropertyRef Name="Department_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Staff_Groups">
+    <End Role="Groups" Type="Self.Group" Multiplicity="0..1" />
+    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="Group_ID" />
+      </Principal>
+      <Dependent Role="Staff">
+        <PropertyRef Name="Group_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LPO_LPO_Status">
+    <End Role="LPO_Status" Type="Self.LPO_Status" Multiplicity="0..1" />
+    <End Role="LPO" Type="Self.LPO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LPO_Status">
+        <PropertyRef Name="LPO_Status_ID" />
+      </Principal>
+      <Dependent Role="LPO">
+        <PropertyRef Name="LPO_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LPO_Quotations">
+    <End Role="Quotations" Type="Self.Quotation" Multiplicity="0..1" />
+    <End Role="LPO" Type="Self.LPO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Quotations">
+        <PropertyRef Name="Quotation_ID" />
+      </Principal>
+      <Dependent Role="LPO">
+        <PropertyRef Name="Quotatio_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Quotation_Products_Quotations">
+    <End Role="Quotations" Type="Self.Quotation" Multiplicity="0..1" />
+    <End Role="Quotation_Products" Type="Self.Quotation_Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Quotations">
+        <PropertyRef Name="Quotation_ID" />
+      </Principal>
+      <Dependent Role="Quotation_Products">
+        <PropertyRef Name="Quotation_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Quotations_Suppliers">
+    <End Role="Suppliers" Type="Self.Supplier" Multiplicity="0..1" />
+    <End Role="Quotations" Type="Self.Quotation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="Supplier_ID" />
+      </Principal>
+      <Dependent Role="Quotations">
+        <PropertyRef Name="Supplier_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Quotations_Tenders">
+    <End Role="Tenders" Type="Self.Tender" Multiplicity="0..1" />
+    <End Role="Quotations" Type="Self.Quotation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tenders">
+        <PropertyRef Name="Tender_ID" />
+      </Principal>
+      <Dependent Role="Quotations">
+        <PropertyRef Name="Tender_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tenders_Staff">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
+    <End Role="Tenders" Type="Self.Tender" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="Staff_ID" />
+      </Principal>
+      <Dependent Role="Tenders">
+        <PropertyRef Name="Staff_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Suppliers_Supplier_Categories">
+    <End Role="Supplier_Categories" Type="Self.Supplier_Categories" Multiplicity="0..1" />
+    <End Role="Suppliers" Type="Self.Supplier" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier_Categories">
+        <PropertyRef Name="Supplier_Category_ID" />
+      </Principal>
+      <Dependent Role="Suppliers">
+        <PropertyRef Name="Supplier_Category_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tender_Products_Tenders">
+    <End Role="Tenders" Type="Self.Tender" Multiplicity="0..1" />
+    <End Role="Tender_Products" Type="Self.Tender_Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tenders">
+        <PropertyRef Name="Tender_ID" />
+      </Principal>
+      <Dependent Role="Tender_Products">
+        <PropertyRef Name="Tender_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProcurementDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Charges" EntityType="Self.Charge" />
+    <EntitySet Name="ClearingAgentContracts" EntityType="Self.ClearingAgentContract" />
+    <EntitySet Name="ClearingAgentDetails" EntityType="Self.ClearingAgentDetail" />
+    <EntitySet Name="ClearingAgents" EntityType="Self.ClearingAgent" />
+    <EntitySet Name="Contracts" EntityType="Self.Contract" />
+    <EntitySet Name="ContractStatus" EntityType="Self.ContractStatu" />
+    <EntitySet Name="Currencies" EntityType="Self.Currency" />
+    <EntitySet Name="Delivery_Periods" EntityType="Self.Delivery_Periods" />
+    <EntitySet Name="Delivery_Sites" EntityType="Self.Delivery_Sites" />
+    <EntitySet Name="Departments" EntityType="Self.Department" />
+    <EntitySet Name="Groups" EntityType="Self.Group" />
+    <EntitySet Name="LPOes" EntityType="Self.LPO" />
+    <EntitySet Name="LPO_Products" EntityType="Self.LPO_Products" />
+    <EntitySet Name="LPO_Status" EntityType="Self.LPO_Status" />
+    <EntitySet Name="Payment_Terms" EntityType="Self.Payment_Terms" />
+    <EntitySet Name="PreContracts" EntityType="Self.PreContract" />
+    <EntitySet Name="Quotation_Products" EntityType="Self.Quotation_Products" />
+    <EntitySet Name="Quotations" EntityType="Self.Quotation" />
+    <EntitySet Name="Staffs" EntityType="Self.Staff" />
+    <EntitySet Name="Supplier_Categories" EntityType="Self.Supplier_Categories" />
+    <EntitySet Name="Suppliers" EntityType="Self.Supplier" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Taxes" EntityType="Self.Tax" />
+    <EntitySet Name="Temas" EntityType="Self.Tema" />
+    <EntitySet Name="Tender_Products" EntityType="Self.Tender_Products" />
+    <EntitySet Name="Tender_Status" EntityType="Self.Tender_Status" />
+    <EntitySet Name="Tenders" EntityType="Self.Tender" />
+    <EntitySet Name="Unit_Of_Measure" EntityType="Self.Unit_Of_Measure" />
+    <EntitySet Name="VPNContracts" EntityType="Self.VPNContract" />
+    <EntitySet Name="Warranties" EntityType="Self.Warranty" />
+    <EntitySet Name="Waybills" EntityType="Self.Waybill" />
+    <AssociationSet Name="FK_LPO_Charges1" Association="Self.FK_LPO_Charges1">
+      <End Role="Charges" EntitySet="Charges" />
+      <End Role="LPO" EntitySet="LPOes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Quotations_Charges" Association="Self.FK_Quotations_Charges">
+      <End Role="Charges" EntitySet="Charges" />
+      <End Role="Quotations" EntitySet="Quotations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Quotations_Charges1" Association="Self.FK_Quotations_Charges1">
+      <End Role="Charges" EntitySet="Charges" />
+      <End Role="Quotations" EntitySet="Quotations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tenders_Currencies" Association="Self.FK_Tenders_Currencies">
+      <End Role="Currencies" EntitySet="Currencies" />
+      <End Role="Tenders" EntitySet="Tenders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tenders_Departments" Association="Self.FK_Tenders_Departments">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="Tenders" EntitySet="Tenders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Staff_Groups" Association="Self.FK_Staff_Groups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="Staff" EntitySet="Staffs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LPO_LPO_Status" Association="Self.FK_LPO_LPO_Status">
+      <End Role="LPO_Status" EntitySet="LPO_Status" />
+      <End Role="LPO" EntitySet="LPOes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LPO_Quotations" Association="Self.FK_LPO_Quotations">
+      <End Role="Quotations" EntitySet="Quotations" />
+      <End Role="LPO" EntitySet="LPOes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Quotation_Products_Quotations" Association="Self.FK_Quotation_Products_Quotations">
+      <End Role="Quotations" EntitySet="Quotations" />
+      <End Role="Quotation_Products" EntitySet="Quotation_Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Quotations_Suppliers" Association="Self.FK_Quotations_Suppliers">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="Quotations" EntitySet="Quotations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Quotations_Tenders" Association="Self.FK_Quotations_Tenders">
+      <End Role="Tenders" EntitySet="Tenders" />
+      <End Role="Quotations" EntitySet="Quotations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tenders_Staff" Association="Self.FK_Tenders_Staff">
+      <End Role="Staff" EntitySet="Staffs" />
+      <End Role="Tenders" EntitySet="Tenders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Suppliers_Supplier_Categories" Association="Self.FK_Suppliers_Supplier_Categories">
+      <End Role="Supplier_Categories" EntitySet="Supplier_Categories" />
+      <End Role="Suppliers" EntitySet="Suppliers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tender_Products_Tenders" Association="Self.FK_Tender_Products_Tenders">
+      <End Role="Tenders" EntitySet="Tenders" />
+      <End Role="Tender_Products" EntitySet="Tender_Products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

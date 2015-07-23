@@ -1,0 +1,118 @@
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\eProcurement.dll.config
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\eProcurement.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\eProcurement.pdb
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\eProcurement.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Antlr3.Runtime.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\EntityFramework.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\EntityFramework.SqlServer.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Security.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Google.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Web.Infrastructure.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Newtonsoft.Json.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Owin.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\System.Web.Helpers.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\System.Web.Mvc.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\System.Web.Optimization.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\System.Web.Razor.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\System.Web.WebPages.Deployment.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\System.Web.WebPages.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\System.Web.WebPages.Razor.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\WebGrease.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\System.Web.Helpers.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\System.Web.Mvc.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\System.Web.Optimization.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\System.Web.Razor.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\System.Web.WebPages.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\System.Web.WebPages.Deployment.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\System.Web.WebPages.Razor.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Newtonsoft.Json.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Antlr3.Runtime.pdb
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\EntityFramework.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\EntityFramework.SqlServer.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Security.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Google.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\obj\Debug\eProcurement.Resources.resources
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\obj\Debug\eProcurement.vbproj.GenerateResource.Cache
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\obj\Debug\eProcurement.dll
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\obj\Debug\eProcurement.xml
+c:\users\stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\obj\Debug\eProcurement.pdb
+C:\Users\Stagoe90\documents\visual studio 2013\Projects\eProcurement\eProcurement\obj\Debug\eProcurement.vbprojResolveAssemblyReference.cache
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\eProcurement.dll.config
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\eProcurement.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\eProcurement.pdb
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\eProcurement.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Antlr3.Runtime.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\EntityFramework.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\EntityFramework.SqlServer.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Security.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Newtonsoft.Json.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Owin.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\System.Web.Helpers.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\System.Web.Mvc.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\System.Web.Optimization.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\System.Web.Razor.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\System.Web.WebPages.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\System.Web.WebPages.Razor.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\WebGrease.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\System.Web.Helpers.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\System.Web.Mvc.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\System.Web.Optimization.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\System.Web.Razor.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\System.Web.WebPages.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\System.Web.WebPages.Razor.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Newtonsoft.Json.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Antlr3.Runtime.pdb
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\EntityFramework.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\EntityFramework.SqlServer.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Security.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\obj\Debug\eProcurement.vbprojResolveAssemblyReference.cache
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\obj\Debug\eProcurement.Resources.resources
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\obj\Debug\eProcurement.vbproj.GenerateResource.Cache
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\obj\Debug\eProcurement.dll
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\obj\Debug\eProcurement.xml
+C:\Users\Stagoe90\Dropbox\Projects 2013\eProcurement\eProcurement\obj\Debug\eProcurement.pdb

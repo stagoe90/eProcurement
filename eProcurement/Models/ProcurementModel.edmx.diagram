@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fcdbe61d0ecf46b4913a43a48a88c463" Name="Diagram1">
+        <EntityTypeShape EntityType="ProcurementDBModel.Charge" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.ClearingAgentContract" Width="1.5" PointX="5.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.ClearingAgentDetail" Width="1.5" PointX="7.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.ClearingAgent" Width="1.5" PointX="10.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Contract" Width="1.5" PointX="10.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.ContractStatu" Width="1.5" PointX="5.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Currency" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Delivery_Periods" Width="1.5" PointX="7.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Delivery_Sites" Width="1.5" PointX="12.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Department" Width="1.5" PointX="1.5" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Group" Width="1.5" PointX="1.5" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.LPO" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.LPO_Products" Width="1.5" PointX="12.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.LPO_Status" Width="1.5" PointX="0.75" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Payment_Terms" Width="1.5" PointX="12.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.PreContract" Width="1.5" PointX="12.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Quotation_Products" Width="1.5" PointX="8.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Quotation" Width="1.5" PointX="6" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Staff" Width="1.5" PointX="1.5" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Supplier_Categories" Width="1.5" PointX="1.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Supplier" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.sysdiagram" Width="1.5" PointX="14.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Tax" Width="1.5" PointX="14.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Tema" Width="1.5" PointX="14.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Tender_Products" Width="1.5" PointX="6" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Tender_Status" Width="1.5" PointX="14.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Tender" Width="1.5" PointX="3.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Unit_Of_Measure" Width="1.5" PointX="14.75" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.VPNContract" Width="1.5" PointX="8.75" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Warranty" Width="1.5" PointX="16.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProcurementDBModel.Waybill" Width="1.5" PointX="16.75" PointY="6.625" IsExpanded="true" />
+        <AssociationConnector Association="ProcurementDBModel.FK_LPO_Charges1" ManuallyRouted="false" />
+        <AssociationConnector Association="ProcurementDBModel.FK_Quotations_Charges" ManuallyRouted="false" />
+        <AssociationConnector Association="ProcurementDBModel.FK_Quotations_Charges1" ManuallyRouted="false" />
+        <AssociationConnector Association="ProcurementDBModel.FK_Tenders_Currencies" ManuallyRouted="false" />
+        <AssociationConnector Association="ProcurementDBModel.FK_Tenders_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="ProcurementDBModel.FK_Staff_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="ProcurementDBModel.FK_LPO_LPO_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="ProcurementDBModel.FK_LPO_Quotations" ManuallyRouted="false" />
+        <AssociationConnector Association="ProcurementDBModel.FK_Quotation_Products_Quotations" ManuallyRouted="false" />
+        <AssociationConnector Association="ProcurementDBModel.FK_Quotations_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="ProcurementDBModel.FK_Quotations_Tenders" ManuallyRouted="false" />
+        <AssociationConnector Association="ProcurementDBModel.FK_Tenders_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="ProcurementDBModel.FK_Suppliers_Supplier_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="ProcurementDBModel.FK_Tender_Products_Tenders" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
